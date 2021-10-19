@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Registration Form
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="from.css">
+        
+    </head>
+    <body>
+        <div class="regform"><h1>Registration Form</h1></div>
+        <div class="main">
+            <form action="insert.php" method="post" >
+                <div id="name">
+                    <h2 class="name">Name</h2>
+                    <input class="firstname" type="text" name="firstname" required><br>
+                    <label class="firstlable">First Name</label>
+                    <input class="lastname" type="text" name="lastname" required>
+                    <label class="lastlable" >Last Name</label>
+
+                </div>
+                <h2 class="name">Email</h2>
+                <input class="email" type="text" name="email" required>
+                <h2 class="name">Phone</h2>
+                <input class="code" type="text" name="areacode" required>
+                <lablel class="areacode">Area Code</lablel>
+                <input class="number" type="text" name="phone" required>
+                <lable class="phone-number">Phone Number</lable>
+                <h2 class="name">Gender</h2>
+                <select class="option" name="subject" required>
+                    <option disabled="disabled" selected="selected">Choose Option</option>
+                    <option>Male </option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </body>
+</html>
